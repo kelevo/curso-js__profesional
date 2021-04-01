@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><button class="call-to-action">Aprender</button></li>
+        <li><button class="call-to-action">Aprender Mas</button></li>
+        <li><button class="call-to-action">Nunca parar de aprender</button></li>
+    </ul>
+
+    <script>
+        //Obtenemos class de los botones
+        const buttons = document.getElementsByClassName('call-to-action')
+        //Cada vez que le demos click a un boton podamos abrir un alert que diga el texto
+        //buttons es un Nodelist
+        // buttons.forEach(button => {
+        //     buton.onclick = () => alert('Nunca pares de aprender!');
+        // });
+
+        //Usamos a buttons como el contexto, como el this
+        Array.prototype.forEach.call(buttons, button => {
+            button.onclick = () => alert('Nunca pares de aprender!');
+        })
+    </script>
+</body>
+</html>

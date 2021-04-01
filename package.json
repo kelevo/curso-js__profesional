@@ -1,0 +1,22 @@
+{
+  "name": "curso-js__profesional",
+  "version": "1.0.0",
+  "description": "Curso profesional de JavaScript en Platzi",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "keywords": [
+    "JavaScript",
+    "profesional",
+    "asincronismo",
+    "scope",
+    "platzivideo"
+  ],
+  "author": "Patrick Jhonatan Hernandez Blanco <patrickjhonatanh@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
